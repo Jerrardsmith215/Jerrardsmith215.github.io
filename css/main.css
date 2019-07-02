@@ -56,9 +56,10 @@ html, body {
 	background: black;
 }
 
+/* frame */
 .container {
 	display:flex;
-	min-width: 320px;
+	min-width: 414px;
 	width: 100vw;
 	background-image: url('../assets/Background.jpg');
 	background-size: cover;
@@ -79,6 +80,7 @@ html, body {
 	margin: 35px 8.45% 25px 8.45%;
 }
 
+/* header */
 
 .header {
 	display: flex;
@@ -88,7 +90,7 @@ html, body {
 }
 
 .header #headShot {
-	width: 37.79%;
+	width: 130px;
 	height: 130px;
 	margin-right: 5.81%
 }
@@ -122,6 +124,8 @@ html, body {
 	margin-left: 20.3%;
 }
 
+/* mission */
+
 .mission {
 	display: flex;
 	flex-direction: column;
@@ -133,7 +137,7 @@ html, body {
 .mission h2 {
 	font-size: 1.8rem;
 	font-family: 'Roboto-condensed', sans-serif;
-	line-height: auto;
+	line-height: 2.2rem;
 }
 
 .mission hr {
@@ -151,18 +155,144 @@ html, body {
 
 .mission span {
 	color:#ae0000;
+	font-weight: 700;
+	font-style: oblique;
 }
 
+/* divisors */
+.divisor {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 25px;
+	margin: 0 0 15px 0;
+	padding-left: 10px;
+	background: #ae0000;
+	font-size: 1.8rem;
+	font-family: 'Roboto-condensed', sans-serif;
+	font-weight: lighter;
+	color: white;
+}
 
+/* clients */
 
+.clients {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 15px;
+}
 
+.showBox {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
 
+.showBox .client{
+	display: flex; 
+	width: 50%;
+}
 
+.showBox .pic {
+	width: 90px;
+	height: 90px;
+	margin-right: 2.5%;
+	border-radius: 10%;
+}
 
+.showBox #reggie_pic {
+	background:url('/assets/ReginaldForeman_mini.png');
+}
 
+.showBox #heather_pic {
+	background: url('/assets/HeatherMini.png')
+}
+
+.showBox .client_creds {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.showBox h3 {
+	color: white;
+	font-size: 1.4rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+.showBox span {
+	color:#ae0000;
+	font-size: 1.4rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+.showBox .text {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.showBox p {
+	color: white;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	font-family: 'Lato', sans-serif;
+}
+
+/* services */
+
+.services {
+	margin-top: 15px;
+}
+
+.whatIdo {
+	color:white;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	font-family:'Roboto-Condensed', sans-serif;
+}
+
+.whatIdo span {
+	font-size: 1.2rem;
+	font-family: 'Lato', sans-serif;
+}
+
+.whatIdo #redSlash {
+	font-size: 1.4rem;
+	color: #ae0000;
+}
+
+/* footer */
 
 .footer {
+	display: flex;
+	align-items: center;
 	width: 100%;
 	height: 80px;
 	background: black;
+}
+
+.footer .chat {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 83.1%;
+	height: auto;
+	margin: auto;
+}
+
+.footer h2 {
+	font-weight: bold;
+	color: #ae0000;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.8rem;
+}
+
+.footer p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	text-align: right;
+	color: white;
 }
