@@ -76,7 +76,7 @@ html, body {
 
 .content {
 	width: 83.1%;
-	height: 590px;
+	min-height: 590px;
 	margin: 35px 8.45% 25px 8.45%;
 }
 
