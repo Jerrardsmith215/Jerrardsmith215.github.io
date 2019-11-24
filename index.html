@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
     <script src=".//js/main.js" async></script>
+    <script src="https://app.termageddon.com/js/termageddon.js"></script>
 </head>
 <body>
     <div class="container">
@@ -25,7 +26,7 @@
                     <img id='headShot' src=".//assets/Head.png">
                     <div class="greeting">
                             <p id="hello">HELLO, I'M</p>
-                            <h1 class="myName" id="jerrard">Jerrard</h1>
+                            <h1 class="myName" id="jerrard">Jerrard<br/>
                             <h1 class="myName" id="smith">Smith</h1>
                     </div>
                 </div>
@@ -34,54 +35,72 @@
                     <hr id="mission_underline">
                     <p>My aim is to <span>add value</span> to individuals through <br/>
                     meaningful and effective business <span>relationships</span>.<br/>
-                    I provide my clients with solutions engineered to <br/>create a
-                    <span>presence</span>, reach an audience, and form<br/> memories.
+                    I provide my clients with <span>solutions</span> engineered to <br/>create a
+                    presence, reach an audience, and form<br/> memories.
                     I believe in open communication,<br/> affordability, and 
                     <span>positive</span> association.</p>
                 </div>
                 <div class="clients">
-                    <div class="divisor" id="clients_divisor"><h2>Major Clients</h2></div>
-                    <div class="showBox">
-                        <div class="client">
-                            <div class="pic" id="reggie_pic"></div>
-                            <div class="client_creds">
-                                <h3>REGINALD</h3>
-                                <span>FOREMAN</span>
-                                <div class="text">
-                                    <p>Author</p>
-                                    <p>Speaker</p>
-                                    <p>Designer</p>
+                    <div class="divisor" id="clients_divisor"><h2>Clients</h2></div>
+                    <div class="showBox" id="showRow1">
+                            <div class="client">
+                                <div class="pic" id="reggie_pic"></div>
+                                <div class="client_creds">
+                                    <h3>REGINALD<br/><span>FOREMAN</span></h3>
+                                    <div class="text">
+                                        <p>Author</p>
+                                        <p>Speaker</p>
+                                        <p>Designer</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="client">
-                            <div class="pic" id="heather_pic"></div>
-                            <div class="client_creds">
-                                <h3>HEATHER</h3>
-                                <span>JACOBS</span>
-                                <div class="text">
-                                    <p>Network</p>
-                                    <p>Marketing</p>
-                                    <p>Professional</p>
+                            <div class="client">
+                                <div class="pic" id="heather_pic"></div>
+                                <div class="client_creds">
+                                    <h3>HEATHER<br/><span>JACOBS</span></h3>
+                                    <div class="text">
+                                        <p>Network</p>
+                                        <p>Marketing</p>
+                                        <p>Professional</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div class="services">
                     <div class="divisor" id="services_divisor"><h2>Services</h2></div>
                     <div class="whatIdo">
-                        <h2>WEB DESIGN <span id="redSlash">//</span> <span>E-commerce, Single Page, Multi-Page</span></h2>
-                        <h2>GRAPHICS <span id="redSlash">//</span> <span>Logos, Banners</span></h2>
-                        <h2>AUDIO & VOICE-OVER <span id="redSlash">//</span> <span>Soundtracks, Speech, CDs</span></h2>
-                        <h2>VIDEO & PHOTO <span id="redSlash">//</span> <span>Editing</span></h2>
+                        <h2>WEB DESIGN<span id="redSlash"> //</span></h2>
+                        <hr id="tinyLine">
+                        <p>Single Page, Multi-Page, E-commerce, Store</p>
+                        <h2>GRAPHICS<span id="redSlash"> //</span></h2>
+                        <hr id="tinyLine">
+                        <p>Logos, Banners</p>
+                        <h2>AUDIO & SPEECH<span id="redSlash"> //</span></h2>
+                        <hr id="tinyLine">
+                        <p>Vocal Editing, Mixing & Polishing, CDs</p>
+                        <h2>VIDEO<span id="redSlash"> //</span></h2>
+                        <hr id="tinyLine">
+                        <p>SFX, Editing, Text-over</p>
                     </div>
                 </div>
             </div>
             <div class="footer">
-                <div class="chat">
-                    <h2>Let's Talk</h2>
-                    <p>(804)-803-6960 <br/>JerrardSmith215@gmail.com</p>
+                <ul class="chat">
+                    <li id="chat">Let's Talk</li>
+                    <li id="phone">(804)-803-6960</li>
+                    <li id="email">JerrardSmith215@gmail.com</li>
+                </ul>
+                <div onclick ="clickHandler()" class="privacy"><p>Privacy Policy</p></div>
+                <p class="copyright">Copyright © 2019 Jerrard Smith</p>
+            </div>
+            <div class="policy">
+                <div class="policy_modal">
+                    <div onclick="clickHandler2()" class="privacy_modal_button" id="closeX">X</div>
+                    <div id="policy"
+                    data-policy-key="ZG5aRFExaEhSRGt6UmxkMmMyYzlQUT09">
+                    </div>
+                    <div onclick="clickHandler2()" class="privacy_modal_button" id="close">Close</div>
                 </div>
             </div>
         </div>
