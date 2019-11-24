@@ -132,6 +132,8 @@ html, body {
 	flex-direction: column;
 }
 
+#missionBr { display: none; }
+
 .mission h2 {
 	font-family: 'Roboto-condensed', sans-serif;
 	font-size: 2rem;
@@ -431,6 +433,10 @@ html, body {
 		height: 150px;
 	}
 
+	#missionBr {
+		display: inline;
+	}
+
 	.mission p {
 		text-align: left;
 	}
@@ -457,7 +463,7 @@ html, body {
 		text-align: center;
 	}
 
-	.showBox {`
+	.showBox {
 		justify-content: space-evenly;
 		margin: auto;
 		width: 100%;
