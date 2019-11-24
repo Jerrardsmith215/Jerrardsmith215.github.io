@@ -51,30 +51,32 @@ table {
 
 /* accessibility, font size */
 html, body {
+	background: rgb(35, 44, 58);
 	font-size: 62.5%;
-	height: 100vh;
 }
 
 /* frame, mobile first, 320px*/
 .container {
 	background-image: url('../assets/Background.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
 	height: 100%;
+	max-height: 900px;
 	width: 100%;
 }
 
 .container-tint {
 	background: black;
-	background-color: rgb(0,0,0,0.77);
+	background-color: rgb(0,0,0,0.65);
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	width: 100%;
-	overflow-y: scroll;
 }
 .content {
-	width: 90%;
+	max-width: 900px;
 	margin: 0 auto;
+	width: 90%;
 }
 
 /* header */
@@ -362,6 +364,9 @@ html, body {
 	font-size: 2rem;
 }
 
+.policy_modal table {
+	margin: auto;
+}
 .policy_modal td, th {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6rem;
@@ -409,7 +414,7 @@ html, body {
 	background: white;
 }
 
-@media(min-width: 414px){
+@media(min-width: 414px) {
 
 	/* header */
 	.header {
@@ -447,10 +452,6 @@ html, body {
 		flex-direction: row;
 	}
 
-	.showBox .client{
-	
-	}
-
 	.showBox .client:first-child {
 		margin: 0;
 	}
@@ -459,7 +460,7 @@ html, body {
 @media(min-width: 500px) {
 	/* mission */
 
-	.mission p{
+	.mission p {
 		text-align: center;
 	}
 
@@ -476,5 +477,23 @@ html, body {
 	
 	.whatIdo #tinyLine {
 		margin: 5px auto;
+	}
+}
+
+@media(min-width: 900px) {
+	#missionBr {
+		display: none;
+	}
+
+	.mission p {
+		line-height: 4rem;
+		margin: auto;
+		max-width: 650px;
+		width: 100%;
+	}
+
+	.policy_modal table {
+		text-align: center;
+		width: 100%;
 	}
 }
