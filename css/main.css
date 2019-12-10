@@ -55,6 +55,19 @@ html, body {
 	font-size: 62.5%;
 }
 
+html ::-webkit-scrollbar {
+	width: 12px;
+}
+
+html ::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+html ::-webkit-scrollbar-thumb
+{
+	background: rgba(0, 0, 0, 0.5);
+}
+
 /* frame, mobile first, 320px*/
 .container {
 	background-image: url('../assets/Background.jpg');
@@ -481,17 +494,37 @@ html, body {
 }
 
 @media(min-width: 900px) {
+	.mission {
+		height: 100%;
+	}
+
 	#missionBr {
 		display: none;
 	}
 
 	.mission p {
+		font-size: 2rem;
 		line-height: 4rem;
 		margin: auto;
 		max-width: 650px;
 		width: 100%;
 	}
 
+	.client h3, span, p {
+		font-size: 2rem;
+	}
+
+	.services h2 {
+		font-size: 2.4rem;
+	}
+
+	.services p {
+		font-size: 2rem;
+	}
+
+	.policy_modal {
+		width: 100vw;
+	}
 	.policy_modal table {
 		text-align: center;
 		width: 100%;
